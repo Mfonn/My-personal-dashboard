@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,UAAU,EAAE,IAAI;EAEhB,QAAQ,EAAE,IAAI;EAEd,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,GAAG;CAGrB",
+    "sources": [
+        "add-note.component.scss"
+    ],
+    "names": [],
+    "file": "add-note.component.css"
+}

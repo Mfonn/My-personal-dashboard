@@ -1,0 +1,135 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons");
+html {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h1.is-bold,
+h2.is-bold {
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 70%;
+  margin: auto;
+}
+
+.btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.78);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.btn:active {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btns-container.btns-centered {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btns-container .align-end {
+  margin-left: auto;
+}
+
+.has-blurred-white-bg {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field label.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.textbox,
+.textarea {
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.textbox:hover,
+.textarea:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.textbox:focus,
+.textarea:focus {
+  background: white;
+  outline: none;
+}
+
+.textbox:hover, .textbox:focus,
+.textarea:hover,
+.textarea:focus {
+  border-color: rgba(0, 0, 0, 0.42);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+/*# sourceMappingURL=styles.css.map */

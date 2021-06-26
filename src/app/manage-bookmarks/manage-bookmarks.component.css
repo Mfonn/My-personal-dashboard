@@ -1,0 +1,80 @@
+.manage-bookmarks-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 220px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: auto;
+}
+
+.sidebar-heading {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 20px;
+  padding: 25px;
+}
+
+.sidebar-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar-item {
+  position: relative;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 18px;
+  padding: 5px 25px;
+}
+
+.sidebar-item:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.sidebar-item.selected {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.sidebar-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.sidebar-item.selected::before {
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: auto;
+}
+/*# sourceMappingURL=manage-bookmarks.component.css.map */

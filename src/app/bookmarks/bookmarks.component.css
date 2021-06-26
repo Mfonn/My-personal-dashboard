@@ -1,0 +1,27 @@
+.bookmarks-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.bookmark-tiles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.add-btn i {
+  margin-right: 5px;
+  margin-left: -3px;
+}
+
+.manage-btn i {
+  margin-right: 8px;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=bookmarks.component.css.map */

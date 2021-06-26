@@ -1,0 +1,17 @@
+<div class="app-wrapper">
+  
+  <div class="top-section">
+    <h1>19.00</h1>
+    <h2>1 January 2020</h2>
+  </div>
+
+  <div class="content-section" [@routeAnim]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+
+  <div class="bottom-section">
+    <app-tabs></app-tabs>
+  </div>
+
+  <app-notification></app-notification>
+</div>
