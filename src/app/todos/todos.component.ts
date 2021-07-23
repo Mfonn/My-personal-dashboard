@@ -44,4 +44,8 @@ export class TodosComponent implements OnInit {
     this.todoService.deleteTodo(todo.id)
   }
 
+  trackById(index, item: Todo) {
+    return item.id
+  }
+
 }

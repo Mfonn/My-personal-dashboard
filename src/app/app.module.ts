@@ -21,6 +21,7 @@ import { ManageBookmarksComponent } from './manage-bookmarks/manage-bookmarks.co
 import { EditBookmarkComponent } from './edit-bookmark/edit-bookmark.component';
 import { NotificationComponent } from './notification/notification.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

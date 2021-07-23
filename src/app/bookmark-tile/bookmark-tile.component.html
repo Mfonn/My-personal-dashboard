@@ -1,4 +1,4 @@
-<div class="bookmark-tile">
+<a [href] = "bookmark.url" target="_blank" class="bookmark-tile">
 
     <div class="tile-icon" *ngIf = "!faviconError">
         <img [src]="tileIconSrc" alt="" (error)= "faviconError=true">
@@ -8,5 +8,5 @@
     </div>
   
     <p class="tile-text">{{ bookmark.name }}</p>
-</div>
+</a>
 

@@ -1,8 +1,23 @@
 <div class="app-wrapper">
+
+  <img 
+  [src]="bg" 
+  *ngFor="let bg of backgrounds.reverse()" 
+  class="bg-img" 
+  (load)= "onBGImageLoad($event)"
+  @bgAnim>
+
+  <div class="btn change-bg-btn" (click)= "changeBGImage()" *ngIf="!loadingBGImage" @fadeAnim>
+    <i class="material-icons">refresh</i>
+  </div>
   
   <div class="top-section">
-    <h1>19.00</h1>
-    <h2>1 January 2020</h2>
+    <!--<h1>19.00</h1>-->
+    <!--<h2>1 January 2020</h2>-->
+
+    <h1>{{ dateTime | async | date:'HH:mm' }}</h1>
+    <h2>{{ dateTime | async | date:'d MMMM y' }}</h2>
+    
   </div>
 
   <div class="content-section" [@routeAnim]="prepareRoute(outlet)">
